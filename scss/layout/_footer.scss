@@ -1,0 +1,50 @@
+footer {
+    background-color: #323333;
+    font-size: 15px;
+    line-height: 24px;
+    color: #b1bec0;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-contact {
+    display: flex;
+    height: 400px;
+    position: relative;
+
+    & img {
+        height: 45px;
+    }
+}
+
+.footer__container {
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+    & img {
+        width: 40%;
+    }
+}
+
+.dash {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #4e4e4e;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    color: #b1bec0;
+
+    & i:hover {
+        cursor: pointer;
+        color: $accent;
+    }
+}

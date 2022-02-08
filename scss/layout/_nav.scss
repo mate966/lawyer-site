@@ -27,7 +27,7 @@ nav {
     }
 }
 
-.container__right {
+.socials {
     & a {
         margin-left: 20px;
     }
@@ -52,8 +52,8 @@ nav {
         &:first-child,
         &:hover {
             padding-bottom: 22px;
-            border-bottom: 4px solid #c19865;
-            color: #c19865;
+            border-bottom: 4px solid $accent;
+            color: $accent;
         }
     }
 }
