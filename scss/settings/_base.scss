@@ -10,3 +10,11 @@
 
 body {
 }
+
+a {
+    color: white;
+
+    &:hover {
+        color: #777;
+    }
+}
