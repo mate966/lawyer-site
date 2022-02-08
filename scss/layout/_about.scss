@@ -1,3 +1,35 @@
-.about {
-    margin-top: 220px;
+#about {
+    margin: 220px auto 80px auto;
+
+    & img {
+        box-shadow: -10px -10px 0px 0px #ffffff, -10px -10px 0px 1px $accent;
+    }
+}
+
+.about-container {
+    margin-top: 80px;
+    // max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__info {
+    margin-left: 60px;
+    max-width: 500px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    // line-height: 21px;
+    color: #414c50;
+    font-weight: 700;
+    font-family: "Montserrat";
+
+    & p {
+        margin-top: 40px;
+        height: 164px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #67767b;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
 }

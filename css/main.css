@@ -201,8 +201,43 @@ header {
   margin: 25px 0 15px 0;
 }
 
-.about {
-  margin-top: 220px;
+#about {
+  margin: 220px auto 80px auto;
+}
+
+#about img {
+  -webkit-box-shadow: -10px -10px 0px 0px #ffffff, -10px -10px 0px 1px #bf9f5e;
+          box-shadow: -10px -10px 0px 0px #ffffff, -10px -10px 0px 1px #bf9f5e;
+}
+
+.about-container {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__info {
+  margin-left: 60px;
+  max-width: 500px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #414c50;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.about__info p {
+  margin-top: 40px;
+  height: 164px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #67767b;
+  font-weight: 400;
+  font-family: "Montserrat";
 }
 
 footer {
@@ -212,6 +247,10 @@ footer {
   color: #b1bec0;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+}
+
+.top-footer {
+  border-bottom: 1px solid #4e4e4e;
 }
 
 .footer-contact {
@@ -224,6 +263,11 @@ footer {
 
 .footer-contact img {
   height: 45px;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #bf9f5e;
 }
 
 .footer__container {
@@ -246,11 +290,10 @@ footer {
   width: 40%;
 }
 
-.dash {
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: #4e4e4e;
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .copyright {
