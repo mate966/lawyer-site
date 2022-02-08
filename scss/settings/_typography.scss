@@ -1,0 +1,29 @@
+.section-heading {
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 21px;
+    letter-spacing: 4px;
+    font-family: "Playfair Display";
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #202628;
+
+    & span {
+        display: block;
+        margin: 36px auto;
+        max-width: 500px;
+        height: 1px;
+        background-color: #d5d5d5;
+
+        &::before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            height: 1px;
+            width: 100px;
+            background-color: #c19865;
+        }
+    }
+}

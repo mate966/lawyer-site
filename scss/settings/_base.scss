@@ -9,12 +9,13 @@
 }
 
 body {
+    min-height: 200vh;
 }
 
 a {
     color: white;
 
     &:hover {
-        color: #777;
+        color: #c19865;
     }
 }
