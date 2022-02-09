@@ -6,11 +6,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
 body {
   min-height: 200vh;
 }
 
 a {
+  text-decoration: none;
   color: white;
 }
 
@@ -51,7 +57,7 @@ a:hover {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 nav {
@@ -115,6 +121,7 @@ nav {
   margin-left: 50px;
   text-transform: uppercase;
   text-decoration: none;
+  font-family: "Playfair Display";
 }
 
 .navigation a:first-child, .navigation a:hover {
@@ -238,6 +245,80 @@ header {
   color: #67767b;
   font-weight: 400;
   font-family: "Montserrat";
+}
+
+#why-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.why-us__left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-height: 500px;
+  background-image: url("./../../img/desktop/chess.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.why-us__left h3 {
+  color: #bf9f5e;
+}
+
+.why-us__right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background-color: #fbf9f5;
+}
+
+.left__container {
+  padding: 5% 5% 0 50%;
+}
+
+.right__container {
+  padding: 5% 33% 5% 50px;
+}
+
+#specializations {
+  margin: 100px auto;
+}
+
+.specializations__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.specialization__container {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.motto {
+  margin: 100px 0;
+  padding: 70px 0;
+  background-color: #f4f0e5;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+.motto h2,
+.motto h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.motto h3 {
+  text-align: right;
+}
+
+#contact {
+  margin: 100px auto;
 }
 
 footer {

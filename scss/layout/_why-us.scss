@@ -1,0 +1,29 @@
+#why-us {
+    display: flex;
+}
+
+.why-us__left {
+    flex-basis: 50%;
+    min-height: 500px;
+    background-image: url("./../../img/desktop/chess.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    & h3 {
+        color: $accent;
+    }
+}
+.why-us__right {
+    flex-basis: 50%;
+    background-color: #fbf9f5;
+}
+
+.left__container {
+    padding: 5% 5% 0 50%;
+}
+
+.right__container {
+    padding: 5% 33% 5% 50px;
+}

@@ -1,0 +1,19 @@
+.motto {
+    margin: 100px 0;
+    padding: 70px 0;
+    background-color: #f4f0e5;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: $secondary-font;
+    color: #000;
+
+    & h2,
+    & h3 {
+        font-family: $secondary-font;
+    }
+
+    & h3 {
+        text-align: right;
+    }
+}
