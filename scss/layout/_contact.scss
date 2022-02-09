@@ -1,3 +1,37 @@
 #contact {
     margin: 100px auto;
 }
+
+.contact__input {
+    width: 33%;
+    padding: 10px;
+    border: 1px solid #e6ebec;
+
+    &:focus {
+        outline: 1px solid $accent;
+    }
+}
+
+.textarea {
+    margin: 10px auto;
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid #e6ebec;
+
+    &:focus {
+        outline: 1px solid $accent;
+    }
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e6ebec;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $accent;
+        color: white;
+    }
+}

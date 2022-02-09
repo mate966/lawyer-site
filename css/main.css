@@ -130,6 +130,24 @@ nav {
   color: #bf9f5e;
 }
 
+.sticky {
+  z-index: 3;
+  position: fixed;
+  background-color: #323333;
+  width: 100%;
+  padding: 0 350px;
+  margin: 0;
+  top: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.sticky .navigation a:first-child, .sticky .navigation a:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #bf9f5e;
+  color: #bf9f5e;
+}
+
 header {
   width: 100%;
   height: 850px;
@@ -304,21 +322,72 @@ header {
   line-height: 3rem;
   text-align: center;
   font-size: 1.3rem;
-  font-family: "Playfair Display", serif;
   color: #000;
 }
 
-.motto h2,
-.motto h3 {
+.motto .sentence {
+  position: relative;
   font-family: "Playfair Display", serif;
+}
+
+.motto .sentence::before {
+  content: open-quote;
+  position: absolute;
+  left: 2%;
+  top: 4%;
+  font-size: 7rem;
+  color: #dfd6bc;
+}
+
+.motto .sentence::after {
+  content: close-quote;
+  position: absolute;
+  right: 2%;
+  font-size: 7rem;
+  color: #dfd6bc;
 }
 
 .motto h3 {
   text-align: right;
+  line-height: 3.5rem;
 }
 
 #contact {
   margin: 100px auto;
+}
+
+.contact__input {
+  width: 33%;
+  padding: 10px;
+  border: 1px solid #e6ebec;
+}
+
+.contact__input:focus {
+  outline: 1px solid #bf9f5e;
+}
+
+.textarea {
+  margin: 10px auto;
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #e6ebec;
+}
+
+.textarea:focus {
+  outline: 1px solid #bf9f5e;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e6ebec;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #bf9f5e;
+  color: white;
 }
 
 footer {

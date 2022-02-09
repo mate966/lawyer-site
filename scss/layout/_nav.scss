@@ -58,3 +58,23 @@ nav {
         }
     }
 }
+
+.sticky {
+    z-index: 3;
+    position: fixed;
+    background-color: $dark-bgc;
+    width: 100%;
+    padding: 0 350px;
+    margin: 0;
+    top: 0;
+    transition: 0.1s;
+
+    & .navigation a {
+        &:first-child,
+        &:hover {
+            padding-bottom: 2px;
+            border-bottom: 1px solid $accent;
+            color: $accent;
+        }
+    }
+}
