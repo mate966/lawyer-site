@@ -1,35 +1,79 @@
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 850px;
+    height: 100vh;
+    max-height: 850px;
     background-image: url("./../../img/desktop/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
+
+    @include breakpointLandscape("md") {
+        height: 150vh;
+    }
+    @include breakpointLandscape("sm") {
+        height: 200vh;
+    }
 }
 
 .welcome {
-    margin: 165px auto;
+    margin: auto auto;
     color: white;
 
-    @include breakpoint("sm") {
-        margin: 40px auto;
+    @include breakpoint("md") {
+        width: 100%;
+        text-align: center;
     }
 }
 
 .welcome-subheading {
     font-size: 25px;
+    font-size: 1.4vw;
     font-weight: 400;
     font-family: "Playfair Display", sans-serif;
     text-transform: uppercase;
+
+    @include breakpoint("xl") {
+        font-size: 2vw;
+    }
+
+    @include breakpoint("md") {
+        font-size: 3vw;
+    }
+    @include breakpoint("sm") {
+        font-size: 5vw;
+    }
 }
 
 .welcome-heading {
-    max-width: 700px;
-    margin: 10px 0 50px 0;
-    font-size: 55px;
+    max-width: 60%;
+    margin: 10px 0 40px 0;
+    font-size: 3vw;
     letter-spacing: 4px;
-    line-height: 60px;
+    line-height: 3.5vw;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include breakpoint("xl") {
+        line-height: 4.5vw;
+        font-size: 4vw;
+    }
+
+    @include breakpoint("md") {
+        max-width: 80%;
+        margin: 20px auto 80px auto;
+        letter-spacing: 2px;
+        font-size: 6vw;
+        line-height: 6vw;
+    }
+
+    @include breakpoint("sm") {
+        max-width: 100%;
+        font-size: 8vw;
+        line-height: 8vw;
+    }
 }
 
 .request-button {

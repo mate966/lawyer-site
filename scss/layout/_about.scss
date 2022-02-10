@@ -3,14 +3,27 @@
 
     & img {
         box-shadow: -10px -10px 0px 0px #ffffff, -10px -10px 0px 1px $accent;
+
+        @include breakpoint("sm") {
+            margin: 0 auto;
+            max-width: 90%;
+        }
+    }
+
+    @include breakpoint("sm") {
+        margin-bottom: 50px;
     }
 }
 
 .about-container {
     margin-top: 80px;
-    // max-width: 500px;
     display: flex;
     justify-content: center;
+
+    @include breakpoint("sm") {
+        flex-direction: column;
+        margin-top: 50px;
+    }
 }
 
 .about__info {
@@ -31,5 +44,10 @@
         color: #67767b;
         font-weight: 400;
         font-family: "Montserrat";
+    }
+
+    @include breakpoint("sm") {
+        text-align: center;
+        margin: 25px auto 0 auto;
     }
 }
