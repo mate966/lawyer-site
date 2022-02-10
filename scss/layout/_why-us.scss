@@ -1,29 +1,63 @@
 #why-us {
     display: flex;
+    min-height: 600px;
+
+    @include breakpoint("md") {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .why-us__left {
     flex-basis: 50%;
-    min-height: 500px;
+    padding: 5% 1% 5% 25%;
     background-image: url("./../../img/desktop/chess.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
 
-    & h3 {
-        color: $accent;
+    & p {
+        margin: 1rem 0;
+    }
+
+    @include breakpoint("md") {
+        padding: 5% 5% 5% 50%;
     }
 }
 .why-us__right {
+    padding: 5% 15% 5% 1%;
     flex-basis: 50%;
     background-color: #fbf9f5;
+
+    @include breakpoint("md") {
+        text-align: center;
+    }
 }
 
-.left__container {
-    padding: 5% 5% 0 50%;
+.advantages {
+    display: flex;
+    margin: 2rem 0;
+
+    & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        min-width: 70px;
+        min-height: 70px;
+        border: 2px solid $accent;
+        border-radius: 50%;
+        font-size: 3rem;
+        color: $accent;
+
+        &::before {
+        }
+    }
 }
 
-.right__container {
-    padding: 5% 33% 5% 50px;
+.advantages__container {
+    & h4 {
+        margin-bottom: 10px;
+    }
 }

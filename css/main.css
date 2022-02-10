@@ -62,6 +62,13 @@ li {
   background-color: #c19865;
 }
 
+.why-us__heading {
+  margin-bottom: 1.5rem;
+  font-family: "Playfair Display", serif, serif;
+  font-size: 1.7rem;
+  color: #bf9f5e;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -584,12 +591,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 600px;
+}
+
+@media (max-width: 992px) {
+  #why-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .why-us__left {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  min-height: 500px;
+  padding: 5% 1% 5% 25%;
   background-image: url("./../../img/desktop/chess.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -597,22 +617,57 @@ header {
   color: white;
 }
 
-.why-us__left h3 {
-  color: #bf9f5e;
+.why-us__left p {
+  margin: 1rem 0;
+}
+
+@media (max-width: 992px) {
+  .why-us__left {
+    padding: 5% 5% 5% 50%;
+  }
 }
 
 .why-us__right {
+  padding: 5% 15% 5% 1%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   background-color: #fbf9f5;
 }
 
-.left__container {
-  padding: 5% 5% 0 50%;
+@media (max-width: 992px) {
+  .why-us__right {
+    text-align: center;
+  }
 }
 
-.right__container {
-  padding: 5% 33% 5% 50px;
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.advantages i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  min-width: 70px;
+  min-height: 70px;
+  border: 2px solid #bf9f5e;
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #bf9f5e;
+}
+
+.advantages__container h4 {
+  margin-bottom: 10px;
 }
 
 #specializations {
