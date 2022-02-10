@@ -1,5 +1,4 @@
 nav {
-    width: 100%;
     color: white;
 }
 
@@ -25,6 +24,11 @@ nav {
             margin-right: 10px;
         }
     }
+
+    @include breakpoint("sm") {
+        flex-direction: column;
+        margin: 10px 0;
+    }
 }
 
 .socials {
@@ -44,27 +48,36 @@ nav {
 }
 
 .navigation {
-    & a {
-        margin-left: 50px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: "Playfair Display";
+    & ul {
+        display: flex;
 
-        &:first-child,
-        &:hover {
-            padding-bottom: 22px;
-            border-bottom: 4px solid $accent;
-            color: $accent;
+        & li a {
+            margin-left: 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: "Playfair Display";
+
+            &:hover {
+                padding-bottom: 22px;
+                border-bottom: 4px solid $accent;
+                color: $accent;
+            }
         }
+    }
+
+    @include breakpoint("sm") {
+        display: none;
     }
 }
 
 .sticky {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     z-index: 3;
     position: fixed;
     background-color: $dark-bgc;
     width: 100%;
-    padding: 0 350px;
     margin: 0;
     top: 0;
     transition: 0.1s;

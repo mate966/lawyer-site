@@ -1,0 +1,36 @@
+.info {
+    display: flex;
+    color: white;
+    transform: translate(0, -50%);
+
+    @include breakpoint("sm") {
+        flex-direction: column;
+        margin-bottom: 100px;
+        padding: 0;
+        transform: translate(0, 0);
+    }
+}
+
+.info__container {
+    flex-basis: 33.33%;
+    height: 230px;
+    padding: 35px;
+    text-align: center;
+    background-color: #c1a787;
+
+    & i {
+        font-size: 50px;
+    }
+
+    &:nth-child(2) {
+        background-color: #c09c6f;
+    }
+    &:nth-child(3) {
+        background-color: #c2935a;
+    }
+}
+
+.info-heading {
+    font-size: 22px;
+    margin: 25px 0 15px 0;
+}

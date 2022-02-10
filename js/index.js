@@ -1,5 +1,15 @@
+"use strict";
+
+window.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("scroll", stickyNav);
+    hamburger.addEventListener("click", hamburgerIsActive);
+});
+
+const nav = document.querySelector(".main-nav");
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".navigation");
+
 const stickyNav = () => {
-    const nav = document.querySelector(".main-nav");
     let windowPosition = window.scrollY;
     if (windowPosition >= 914) {
         nav.classList.add("sticky");
@@ -10,4 +20,10 @@ const stickyNav = () => {
     }
 };
 
-window.addEventListener("scroll", stickyNav);
+const showMenu = () => {};
+
+const hamburgerIsActive = () => {
+    hamburger.classList.toggle("is-active");
+
+    showMenu();
+};

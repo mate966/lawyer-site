@@ -9,6 +9,10 @@ header {
 .welcome {
     margin: 165px auto;
     color: white;
+
+    @include breakpoint("sm") {
+        margin: 40px auto;
+    }
 }
 
 .welcome-subheading {
@@ -41,33 +45,4 @@ header {
         color: white;
         cursor: pointer;
     }
-}
-
-.info {
-    display: flex;
-    color: white;
-}
-
-.info__container {
-    flex-basis: 33.33%;
-    height: 230px;
-    padding: 45px;
-    text-align: center;
-    background-color: #c1a787;
-
-    & i {
-        font-size: 50px;
-    }
-
-    &:nth-child(2) {
-        background-color: #c09c6f;
-    }
-    &:nth-child(3) {
-        background-color: #c2935a;
-    }
-}
-
-.info-heading {
-    font-size: 22px;
-    margin: 25px 0 15px 0;
 }
