@@ -4,8 +4,43 @@
 
 .specializations__container {
     display: flex;
+
+    @include breakpoint("md") {
+        flex-direction: column;
+    }
 }
 
 .specialization__container {
-    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    @include breakpoint("md") {
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container__heading {
+    display: flex;
+    align-items: center;
+
+    & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        min-width: 50px;
+        min-height: 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 3rem;
+        color: $accent;
+    }
+
+    & h4 {
+        width: 100%;
+    }
 }
