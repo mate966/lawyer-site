@@ -35,6 +35,7 @@ li {
 .section-heading {
   max-width: 500px;
   margin: 0 auto;
+  padding-top: 100px;
   line-height: 21px;
   letter-spacing: 4px;
   font-family: "Playfair Display";
@@ -700,10 +701,6 @@ header {
   margin-bottom: 10px;
 }
 
-#specializations {
-  margin: 100px auto;
-}
-
 .specializations__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,7 +775,7 @@ header {
 }
 
 .motto {
-  margin: 100px 0;
+  margin-top: 100px;
   padding: 70px 0;
   background-color: #f4f0e5;
   line-height: 3rem;
@@ -815,17 +812,7 @@ header {
 }
 
 #contact {
-  margin: 100px auto;
-}
-
-.contact__input {
-  width: 33%;
-  padding: 10px;
-  border: 1px solid #e6ebec;
-}
-
-.contact__input:focus {
-  outline: 1px solid #bf9f5e;
+  margin-bottom: 100px;
 }
 
 .textarea {
@@ -850,6 +837,37 @@ header {
 .submit:hover {
   background-color: #bf9f5e;
   color: white;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-container .contact__input {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e6ebec;
+}
+
+.input-container .contact__input:focus {
+  outline: 1px solid #bf9f5e;
+}
+
+@media (max-width: 767px) {
+  .input-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer {
@@ -882,12 +900,13 @@ footer {
   color: #bf9f5e;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .footer-contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -908,7 +927,15 @@ footer {
 }
 
 .footer__container img {
-  width: 40%;
+  width: 135px;
+}
+
+@media (max-width: 992px) {
+  .footer__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact__container {

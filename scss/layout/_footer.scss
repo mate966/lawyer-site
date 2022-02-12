@@ -25,8 +25,9 @@ footer {
         color: $accent;
     }
 
-    @include breakpoint("md") {
+    @include breakpoint("sm") {
         flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -38,7 +39,11 @@ footer {
     padding: 15px;
 
     & img {
-        width: 40%;
+        width: 135px;
+    }
+
+    @include breakpoint("md") {
+        align-items: center;
     }
 }
 
