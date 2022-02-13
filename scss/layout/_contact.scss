@@ -2,47 +2,84 @@
     margin-bottom: 100px;
 }
 
-.textarea {
-    margin: 10px auto;
+.form__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint("sm") {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.input-container {
+    flex-basis: 32%;
+}
+
+.text-input {
     width: 100%;
-    min-height: 200px;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #e6ebec;
 
     &:focus {
         outline: 1px solid $accent;
     }
+
+    &::placeholder {
+        color: $accent;
+    }
+
+    @include breakpoint("sm") {
+        text-align: center;
+    }
 }
 
-.submit {
+.text-message {
+    min-height: 200px;
+    vertical-align: bottom;
+}
+
+.form__textarea {
+    @include breakpoint("sm") {
+        text-align: center;
+    }
+}
+
+.sumit-button {
     width: 100%;
+    margin-top: 30px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #e6ebec;
+    color: $accent;
     cursor: pointer;
 
     &:hover {
         background-color: $accent;
         color: white;
     }
+
+    transition: 0.3s;
 }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
+.error-message {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: $accent;
+}
 
-    & .contact__input {
-        flex-basis: 32%;
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #e6ebec;
+.form__response {
+    display: none;
+    margin: 20px 0;
+    text-align: center;
+}
 
-        &:focus {
-            outline: 1px solid $accent;
-        }
-    }
+.error-active,
+.response-active {
+    display: block;
+}
 
-    @include breakpoint("sm") {
-        flex-direction: column;
-    }
+.input-error {
+    border: 1px solid $accent;
 }

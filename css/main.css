@@ -815,31 +815,7 @@ header {
   margin-bottom: 100px;
 }
 
-.textarea {
-  margin: 10px auto;
-  width: 100%;
-  min-height: 200px;
-  border: 1px solid #e6ebec;
-}
-
-.textarea:focus {
-  outline: 1px solid #bf9f5e;
-}
-
-.submit {
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #e6ebec;
-  cursor: pointer;
-}
-
-.submit:hover {
-  background-color: #bf9f5e;
-  color: white;
-}
-
-.input-container {
+.form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,26 +824,101 @@ header {
           justify-content: space-between;
 }
 
-.input-container .contact__input {
+@media (max-width: 767px) {
+  .form__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.input-container {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
+}
+
+.text-input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #e6ebec;
 }
 
-.input-container .contact__input:focus {
+.text-input:focus {
   outline: 1px solid #bf9f5e;
 }
 
+.text-input::-webkit-input-placeholder {
+  color: #bf9f5e;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #bf9f5e;
+}
+
+.text-input::-ms-input-placeholder {
+  color: #bf9f5e;
+}
+
+.text-input::placeholder {
+  color: #bf9f5e;
+}
+
 @media (max-width: 767px) {
-  .input-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .text-input {
+    text-align: center;
   }
+}
+
+.text-message {
+  min-height: 200px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 767px) {
+  .form__textarea {
+    text-align: center;
+  }
+}
+
+.sumit-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e6ebec;
+  color: #bf9f5e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sumit-button:hover {
+  background-color: #bf9f5e;
+  color: white;
+}
+
+.error-message {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: #bf9f5e;
+}
+
+.form__response {
+  display: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.error-active,
+.response-active {
+  display: block;
+}
+
+.input-error {
+  border: 1px solid #bf9f5e;
 }
 
 footer {

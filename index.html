@@ -27,10 +27,15 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/main.css" />
-        <!-- <link
-            rel="stylesheet"
-            href="./scss/settings/hamburger/_sass/hamburgers/hamburgers.scss"
-        /> -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_iukqE24NhbXvcrXrglgIe");
+            })();
+        </script>
     </head>
     <body>
         <header>
@@ -46,7 +51,9 @@
                             </div>
                             <div class="left__contact">
                                 <i class="far fa-envelope"></i>
-                                <p>biuro@krpjk.pl</p>
+                                <a href="mailto:biuro@krpjk.pl"
+                                    >biuro@krpjk.pl</a
+                                >
                             </div>
                             <div class="left__contact">
                                 <i class="far fa-clock"></i>
@@ -256,31 +263,49 @@
         </section>
         <section id="contact" class="wrapper">
             <h2 class="section-heading">Kontakt<span></span></h2>
-            <form>
-                <div class="input-container">
+            <form id="contact__form">
+                <div class="form__container">
+                    <div class="input-container">
+                        <input
+                            id="first-name"
+                            type="text"
+                            placeholder="Imię"
+                            class="text-input"
+                        />
+                    </div>
+                    <div class="input-container">
+                        <input
+                            id="last-name"
+                            type="text"
+                            placeholder="Nazwisko"
+                            class="text-input"
+                        />
+                    </div>
+                    <div class="input-container">
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="Email"
+                            class="text-input"
+                        />
+                    </div>
+                </div>
+                <div class="form__textarea">
                     <input
-                        type="text"
-                        placeholder="Imię"
-                        class="contact__input"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Nazwisko"
-                        class="contact__input"
-                    />
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        class="contact__input"
+                        id="message"
+                        type="textarea"
+                        placeholder="Jak mogę Ci pomóc?"
+                        class="text-input text-message"
                     />
                 </div>
                 <input
-                    type="textarea"
-                    placeholder="Jak mogę Ci pomóc?"
-                    class="textarea"
+                    id="submit"
+                    type="submit"
+                    value="Wyślij wiadomość"
+                    class="sumit-button"
                 />
-                <input type="submit" value="Wyślij wiadomość" class="submit" />
             </form>
+            <p class="form__response"></p>
         </section>
         <footer>
             <div class="top-footer">
@@ -346,5 +371,6 @@
             </div>
         </footer>
         <script src="js/index.js"></script>
+        <script src="js/email.js"></script>
     </body>
 </html>
