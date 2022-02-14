@@ -14,6 +14,7 @@
         />
         <meta name="author" content="Mateusz Szweda" />
         <title>Jan Karolak - Kancelaria Radcy Prawnego</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -90,14 +91,17 @@
                     </button>
                 </div>
             </nav>
+
             <div class="welcome wrapper">
-                <h4 class="welcome-subheading">With lawyer & attorney</h4>
-                <h1 class="welcome-heading">
-                    Meet us & we can help you to win
-                </h1>
-                <button class="request-button">
-                    Request a free consultation
-                </button>
+                <div data-aos="fade-down">
+                    <h2 class="welcome-subheading">
+                        Kancelaria Radcy Prawnego
+                    </h2>
+                    <h1 class="welcome-heading">Jan Karolak</h1>
+                    <button class="request-button">
+                        zasięgnij porady prawnej
+                    </button>
+                </div>
             </div>
         </header>
         <div class="info wrapper">
@@ -129,38 +133,59 @@
         <section id="about" class="wrapper">
             <h2 class="section-heading">O firmie<span></span></h2>
             <div class="about-container">
-                <img src="./img/desktop/prawnik.jpg" alt="" />
-                <div class="about__info">
-                    <h1>Kancelaria Radcy Prawnego Jan Karolak</h1>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nobis quam veritatis nesciunt voluptatem enim
-                        magni, fuga ab mollitia dolorum totam minus nam natus
-                        ducimus alias quasi hic, quaerat veniam? Provident?
-                    </p>
+                <div data-aos="fade-right" data-aos-offset="250">
+                    <img src="./img/desktop/prawnik.jpg" alt="" />
+                </div>
+                <div data-aos="fade-left" data-aos-offset="250">
+                    <div class="about__info">
+                        <h1>Kancelaria Radcy Prawnego Jan Karolak</h1>
+                        <p>
+                            Od 2018 r. prowadzę pomoc prawną dla osób fizycznych
+                            i przedsiębiorców na terenie Tczewa oraz trójmiasta
+                            i okolic. Moim celem jest zapewnienie profesjonalnej
+                            obsługi prawnej, począwszy od pierwszej porady aż do
+                            osiągnięcia zamierzonego rezultatu. Każda sprawa
+                            jest prowadzona przeze mnie osobiście, wiąże się to
+                            wysokim poziomem zaangażowania i gwarantuje
+                            najwyższą jakość świadczonych usług.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="why-us">
             <div class="why-us__left">
-                <h3 class="why-us__heading">Potrzebujesz pomocy prawnej?</h3>
+                <h3 class="why-us__heading">
+                    Potrzebujesz pomocy radcy prawnego?
+                </h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quo repudiandae quae voluptates inventore explicabo dolores
-                    ut odit amet laboriosam fugiat accusantium, aut corrupti
-                    error unde consectetur quisquam modi corporis nulla.
+                    Zawód radcy prawnego jest zawodem zaufania publicznego,
+                    funkcjonującym w oparciu o ustawę z dnia 6 lipca 1982 r.
+                    o radcach prawnych. Wykonywanie zawodu radcy prawnego polega
+                    na świadczeniu pomocy prawnej. Świadczenie pomocy prawnej
+                    przez radcę prawnego polega w szczególności na udzielaniu
+                    porad i konsultacji prawnych, sporządzaniu opinii prawnych,
+                    opracowywaniu projektów aktów prawnych oraz występowaniu
+                    przed urzędami i sądami w charakterze pełnomocnika lub
+                    obrońcy, włączając w to występowanie przed Sądem Najwyższym,
+                    Trybunałem Konstytucyjnym, Naczelnym Sądem Administracyjnym,
+                    Trybunałem Sprawiedliwości Unii Europejskiej i Europejskim
+                    Trybunałem Praw Człowieka. Brak jest jakichkolwiek
+                    ograniczeń co do podmiotów, na których rzecz radca prawny
+                    może świadczyć pomoc prawną.
                 </p>
+                <h3 class="why-us__heading">Dlaczego radca prawny?</h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quo repudiandae quae voluptates inventore explicabo dolores
-                    ut odit amet laboriosam fugiat accusantium, aut corrupti
-                    error unde consectetur quisquam modi corporis nulla.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quo repudiandae quae voluptates inventore explicabo dolores
-                    ut odit amet laboriosam fugiat accusantium, aut corrupti
-                    error unde consectetur quisquam modi corporis nulla.
+                    Dlatego, iż radca prawny jest zobowiązany do przestrzegania
+                    zasad etyki zawodowej, w tym uchwalonego przez Krajowy Zjazd
+                    Radców Prawnych Kodeksu Etyki Radcy Prawnego, którego normy
+                    regulują podstawowe wartości zawodu, między
+                    innymi niezależność, tajemnicę zawodową, unikanie konfliktu
+                    interesów, kwestię ochrony godności zawodu w życiu
+                    zawodowym, publicznym i prywatnym oraz lojalności wobec
+                    klientów. Zasady etyki radcy prawnego regulują też
+                    kwestie informowania o wykonywaniu zawodu, stosunku do
+                    sądów, urzędów państwowych, samorządu jego członków.
                 </p>
             </div>
             <div class="why-us__right">
@@ -168,10 +193,14 @@
                 <div class="advantages">
                     <i class="fas fa-gavel"></i>
                     <div class="advantages__container">
-                        <h4>We have best attorneys team</h4>
+                        <h4>Elastyczne wynagrodzenie</h4>
                         <p>
-                            We have the most professional lawyers to help you.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                            Wynagrodzenie ustalane jest indywidualnie z każdy
+                            klientem. Istnieje możliwość zapłaty za całą sprawę
+                            z góry, etapami za konkretnie umówione czynności
+                            oraz z uwagi na poświęcony czas. W wyjątkowych
+                            przypadkach wynagrodzenie może zostać rozłożone na
+                            raty lub z odroczonym terminem płatności.
                         </p>
                     </div>
                 </div>
@@ -188,10 +217,15 @@
                 <div class="advantages">
                     <i class="fas fa-gavel"></i>
                     <div class="advantages__container">
-                        <h4>We have best attorneys team</h4>
+                        <h4>Bezpośredni kontakt z radcą prawnym</h4>
                         <p>
-                            We have the most professional lawyers to help you.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing.
+                            Każda sprawa jest od początku do końca obsługiwana
+                            przez radcę prawnego. Każda sprawa wymaga
+                            indywidualnego podejścia do klienta i jego problemu,
+                            dlatego też osobiście prowadzę każdą sprawę,
+                            rozwiązując problemy prawne klientów. W razie
+                            potrzeby istnieje także możliwość dojazdu do
+                            klienta.
                         </p>
                     </div>
                 </div>
@@ -203,54 +237,136 @@
                 <div class="specialization__container">
                     <div class="container__heading">
                         <i class="fas fa-gavel"></i>
-                        <h4>Prawo cywilne</h4>
+                        <h4>PRAWO RODZINNE I OPIEKUŃCZE</h4>
                     </div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Veniam, facere nisi! Optio debitis quis sed
-                        obcaecati atque quidem, asperiores omnis explicabo
-                        praesentium est, dicta voluptatum quam exercitationem,
-                        laborum nostrum tempore!
-                    </p>
+                    <ul>
+                        <li>- rozwody i separacje,</li>
+                        <li>- alimenty</li>
+                        <li>
+                            - realizacja obowiązku zaspokajania potrzeb rodziny
+                        </li>
+                        <li>
+                            - ustalenie miejsca pobytu dzieci oraz kontaktów
+                            z dziećmi,
+                        </li>
+                        <li>
+                            - ograniczenie lub pozbawienie władzy
+                            rodzicielskiej,
+                        </li>
+                        <li>
+                            - ustalenie i zaprzeczenie ojcostwa i macierzyństwa,
+                        </li>
+                        <li>- opuszczenie lokalu przez sprawcę przemocy,</li>
+                        <li>
+                            - podział majątku małżonków, umowy majątkowe,
+                            podział po rozwodzie.
+                        </li>
+                    </ul>
                 </div>
                 <div class="specialization__container">
                     <div class="container__heading">
                         <i class="fas fa-gavel"></i>
-                        <h4>Prawo cywilne</h4>
+                        <h4>PRAWO SPADKOWE</h4>
                     </div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Veniam, facere nisi! Optio debitis quis sed
-                        obcaecati atque quidem, asperiores omnis explicabo
-                        praesentium est, dicta voluptatum quam exercitationem,
-                        laborum nostrum tempore!
-                    </p>
+                    <ul>
+                        <li>
+                            - stwierdzenie nabycia spadku na podstawie
+                            testamentu lub ustawy,
+                        </li>
+                        <li>- dział spadku i zniesienie współwłasności</li>
+                        <li>- przyjęcie i odrzucenie spadku</li>
+                        <li>
+                            - uznanie spadkobiercy za niegodnego dziedziczenia,
+                            wydziedziczenie
+                        </li>
+                        <li>- sprzedaż lub darowizna udziału spadkowego</li>
+                        <li>- zachowek</li>
+                    </ul>
                 </div>
                 <div class="specialization__container">
                     <div class="container__heading">
                         <i class="fas fa-gavel"></i>
-                        <h4>Prawo cywilne</h4>
+                        <h4>PRAWO NIERUCHOMOŚCI</h4>
                     </div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Veniam, facere nisi! Optio debitis quis sed
-                        obcaecati atque quidem, asperiores omnis explicabo
-                        praesentium est, dicta voluptatum quam exercitationem,
-                        laborum nostrum tempore!
-                    </p>
+                    <ul>
+                        <li>- analiza stanu prawnego nieruchomości</li>
+                        <li>- wpis do księgi wieczystej</li>
+                        <li>
+                            - projekty i negocjacje umów nabycia i sprzedaży
+                            nieruchomości, umów developerskich, najmu, dzierżawy
+                        </li>
+                        <li>- hipoteka, służebności, użytkowanie</li>
+                        <li>- zasiedzenie</li>
+                        <li>
+                            - zniesienie współwłasności, podział nieruchomości
+                        </li>
+                    </ul>
                 </div>
                 <div class="specialization__container">
                     <div class="container__heading">
                         <i class="fas fa-gavel"></i>
-                        <h4>Prawo cywilne</h4>
+                        <h4>ODSZKODOWANIA</h4>
                     </div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Veniam, facere nisi! Optio debitis quis sed
-                        obcaecati atque quidem, asperiores omnis explicabo
-                        praesentium est, dicta voluptatum quam exercitationem,
-                        laborum nostrum tempore!
-                    </p>
+                    <ul>
+                        <li>- szkody komunikacyjne,</li>
+                        <li>- szkody majątkowe</li>
+                        <li>- zadośćuczynienia za doznaną krzywdę</li>
+                    </ul>
+                </div>
+                <div class="specialization__container">
+                    <div class="container__heading">
+                        <i class="fas fa-gavel"></i>
+                        <h4>ODDŁUŻANIE</h4>
+                    </div>
+                    <ul>
+                        <li>- sprzeciwy od nakazu zapłaty,</li>
+                        <li>- przywracanie terminu do złożenia sprzeciwu</li>
+                        <li>- sprawy przeciwko masowym wierzycielom</li>
+                        <li>- skarga na czynność komornika</li>
+                        <li>- upadłość konsumencka</li>
+                    </ul>
+                </div>
+                <div class="specialization__container">
+                    <div class="container__heading">
+                        <i class="fas fa-gavel"></i>
+                        <h4>WINDYKACJA</h4>
+                    </div>
+                    <ul>
+                        <li>- wezwania do zapłaty</li>
+                        <li>- dochodzenie należności na drodze sądowej</li>
+                        <li>- prowadzenie postępowań egzekucyjnych</li>
+                    </ul>
+                </div>
+                <div class="specialization__container">
+                    <div class="container__heading">
+                        <i class="fas fa-gavel"></i>
+                        <h4>PRAWO PRACY I UBEZPIECZEŃ</h4>
+                    </div>
+                    <ul>
+                        <li>- przywrócenie do pracy</li>
+                        <li>
+                            - odszkodowanie za zwolnienie niezgodne z prawem
+                        </li>
+                        <li>
+                            - odwołania od decyzji ZUS (emerytura, emerytura
+                            pomostowa, renta)
+                        </li>
+                    </ul>
+                </div>
+                <div class="specialization__container">
+                    <div class="container__heading">
+                        <i class="fas fa-gavel"></i>
+                        <h4>PRAWO KARNE</h4>
+                    </div>
+                    <ul>
+                        <li>- reprezentacja poszkodowanych</li>
+                        <li>- prowadzenie obrony w sprawach karnych</li>
+                        <li>- prowadzenie obrony w sprawach o wykroczenie</li>
+                        <li>
+                            - prawo karne wykonawcze (system dozoru
+                            elektronicznego, alkoblokada),
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -263,6 +379,21 @@
         </section>
         <section id="contact" class="wrapper">
             <h2 class="section-heading">Kontakt<span></span></h2>
+            <div class="about-me">
+                <h1>Radca Prawny Jan Karolak</h1>
+                <p>
+                    Ukończyłem prawo oraz międzynarodowe stosunki polityczne na
+                    Uniwersytecie Gdańskim. Następnie obyłem aplikację radcowską
+                    i uzyskałem pozytywny wynik z egzaminu zawodowego.
+                    Doświadczenie zawodowe zdobywałem w kancelariach na terenie
+                    województwa pomorskiego. Współpracowałem z fundacjami i
+                    stowarzyszeniami, udzielając porad w ramach nieodpłatnych
+                    punktów pomocy prawnej. Jestem wpisany na listę radców
+                    prawnych prowadzoną przez Okręgową Izbę Radców Prawnych w
+                    Gdańsku – numer wpisu GD/GD/3542.
+                </p>
+            </div>
+            <div class="form"></div>
             <form id="contact__form">
                 <div class="form__container">
                     <div class="input-container">
@@ -302,7 +433,7 @@
                     id="submit"
                     type="submit"
                     value="Wyślij wiadomość"
-                    class="sumit-button"
+                    class="submit-button"
                 />
             </form>
             <p class="form__response"></p>
@@ -372,5 +503,7 @@
         </footer>
         <script src="js/index.js"></script>
         <script src="js/email.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script></script>
     </body>
 </html>

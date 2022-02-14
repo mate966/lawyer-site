@@ -1,0 +1,16 @@
+@mixin button {
+    border: 3px solid $accent;
+    background: transparent;
+    text-transform: uppercase;
+    color: $accent;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $accent;
+        color: white;
+        cursor: pointer;
+    }
+}

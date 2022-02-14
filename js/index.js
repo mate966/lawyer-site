@@ -1,6 +1,7 @@
 "use strict";
 
 window.addEventListener("DOMContentLoaded", () => {
+    AOS.init({ duration: 1500, delay: 200 });
     window.addEventListener("scroll", stickyNav);
     hamburger.addEventListener("click", hamburgerIsActive);
 });
