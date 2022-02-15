@@ -15,25 +15,26 @@ nav {
 
 .container__left {
     display: flex;
-
-    & .left__contact {
-        display: flex;
-        margin-right: 45px;
-
-        & i {
-            margin-right: 10px;
-        }
-    }
+    margin: 10px 0;
 
     @include breakpoint("sm") {
         flex-direction: column;
-        margin: 10px 0;
     }
 }
 
-.socials {
-    & a {
-        margin-left: 20px;
+.left__contact {
+    display: flex;
+    margin-right: 45px;
+
+    & i {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: $accent-c;
+    }
+
+    @include breakpoint("sm") {
+        margin: 5px 0;
     }
 }
 
@@ -55,12 +56,13 @@ nav {
             margin-left: 50px;
             text-transform: uppercase;
             text-decoration: none;
-            font-family: "Playfair Display";
+            font-family: $secondary-font;
 
             &:hover {
                 padding-bottom: 22px;
-                border-bottom: 4px solid $accent;
-                color: $accent;
+                border-bottom: 4px solid $accent-c;
+                color: $accent-c;
+                cursor: pointer;
             }
         }
     }
@@ -76,19 +78,19 @@ nav {
     align-items: center;
     z-index: 3;
     position: fixed;
-    background-color: $dark-bgc;
+    background-color: $darkBgc-c;
     width: 100%;
     padding: 10px 0;
+    color: white;
     margin: 0;
     top: 0;
     transition: 0.1s;
 
     & .navigation a {
-        &:first-child,
         &:hover {
-            padding-bottom: 2px;
-            border-bottom: 1px solid $accent;
-            color: $accent;
+            padding-bottom: 6px;
+            border-bottom: 2px solid $accent-c;
+            color: $accent-c;
         }
     }
 }

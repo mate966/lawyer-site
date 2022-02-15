@@ -20,14 +20,14 @@
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid $accent;
+    border: 1px solid $accent-c;
 
     &:focus {
-        outline: 1px solid $accent;
+        outline: 1px solid $accent-c;
     }
 
     &::placeholder {
-        color: $accent;
+        color: $accent-c;
     }
 
     @include breakpoint("sm") {
@@ -56,7 +56,7 @@
 .error-message {
     font-size: 0.8rem;
     margin-bottom: 10px;
-    color: $accent;
+    color: $accent-c;
 }
 
 .form__response {
@@ -71,5 +71,5 @@
 }
 
 .input-error {
-    border: 1px solid $accent;
+    border: 1px solid $accent-c;
 }

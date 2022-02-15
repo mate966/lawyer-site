@@ -233,17 +233,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.container__left .left__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 45px;
-}
-
-.container__left .left__contact i {
-  margin-right: 10px;
+  margin: 10px 0;
 }
 
 @media (max-width: 767px) {
@@ -252,12 +242,31 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 10px 0;
   }
 }
 
-.socials a {
-  margin-left: 20px;
+.left__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 45px;
+}
+
+.left__contact i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+  color: #bf9f5e;
+}
+
+@media (max-width: 767px) {
+  .left__contact {
+    margin: 5px 0;
+  }
 }
 
 .main-nav {
@@ -284,13 +293,14 @@ nav {
   margin-left: 50px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
 }
 
 .navigation ul li a:hover {
   padding-bottom: 22px;
   border-bottom: 4px solid #bf9f5e;
   color: #bf9f5e;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -313,15 +323,16 @@ nav {
   background-color: #323333;
   width: 100%;
   padding: 10px 0;
+  color: white;
   margin: 0;
   top: 0;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-.sticky .navigation a:first-child, .sticky .navigation a:hover {
-  padding-bottom: 2px;
-  border-bottom: 1px solid #bf9f5e;
+.sticky .navigation a:hover {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #bf9f5e;
   color: #bf9f5e;
 }
 
@@ -336,13 +347,18 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 100%;
   height: 100vh;
   max-height: 850px;
   background-image: url("./../../img/desktop/header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+
+@media (max-width: 1200px) {
+  header {
+    background-image: url("./../../img/mobile/header-m.jpg");
+  }
 }
 
 @media (max-width: 992px) and (orientation: landscape) {
@@ -358,7 +374,7 @@ header {
 }
 
 .welcome {
-  margin-top: 200px;
+  margin: auto;
   color: white;
 }
 
@@ -370,63 +386,36 @@ header {
 }
 
 .welcome-subheading {
-  font-size: 25px;
-  font-size: 1.4vw;
+  margin-bottom: 10px;
+  font-size: 2rem;
   font-weight: 400;
-  font-family: "Playfair Display", sans-serif;
   text-transform: uppercase;
+  font-family: "Playfair Display", serif;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 512px) {
   .welcome-subheading {
-    font-size: 2vw;
-  }
-}
-
-@media (max-width: 992px) {
-  .welcome-subheading {
-    font-size: 3vw;
-  }
-}
-
-@media (max-width: 767px) {
-  .welcome-subheading {
-    font-size: 5vw;
+    font-size: 1.5rem;
   }
 }
 
 .welcome-heading {
-  max-width: 60%;
-  margin: 10px 0 40px 0;
-  font-size: 3vw;
+  font-size: 5rem;
   letter-spacing: 4px;
-  line-height: 3.5vw;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@media (max-width: 1440px) {
-  .welcome-heading {
-    line-height: 4.5vw;
-    font-size: 4vw;
-  }
-}
-
 @media (max-width: 992px) {
   .welcome-heading {
-    max-width: 80%;
-    margin: 20px auto 80px auto;
     letter-spacing: 2px;
-    font-size: 6vw;
-    line-height: 6vw;
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 767px) {
   .welcome-heading {
-    max-width: 100%;
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 3rem;
   }
 }
 
@@ -440,6 +429,7 @@ header {
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 30px;
   padding: 15px 20px;
 }
 
@@ -447,6 +437,12 @@ header {
   background-color: #bf9f5e;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 512px) {
+  .request-button {
+    padding: 15px;
+  }
 }
 
 .info {

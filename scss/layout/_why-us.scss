@@ -60,10 +60,10 @@
         min-height: 70px;
         width: 70px;
         height: 70px;
-        border: 2px solid $accent;
+        border: 2px solid $accent-c;
         border-radius: 50%;
         font-size: 3rem;
-        color: $accent;
+        color: $accent-c;
     }
 
     @include breakpoint("sm") {

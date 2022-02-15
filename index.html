@@ -66,9 +66,6 @@
                                 href="https://www.facebook.com/profile.php?id=100010595116449&sk=about_overview"
                                 ><i class="fab fa-facebook-f"></i
                             ></a>
-                            <a href="https://twitter.com/jkarolak92"
-                                ><i class="fab fa-twitter"></i
-                            ></a>
                         </div>
                     </div>
                 </div>
@@ -76,12 +73,12 @@
                     <img src="/img/desktop/logo.png" alt="Logo firmy" />
                     <div class="navigation">
                         <ul>
-                            <li><a href="#">Strona Główna</a></li>
-                            <li><a href="#about">O firmie</a></li>
+                            <li><a class="home-nav">Strona Główna</a></li>
+                            <li><a class="about-nav">O firmie</a></li>
                             <li>
-                                <a href="#specializations">Specjalizacje</a>
+                                <a class="specializations-nav">Specjalizacje</a>
                             </li>
-                            <li><a href="#contact">Kontakt</a></li>
+                            <li><a class="contact-navi">Kontakt</a></li>
                         </ul>
                     </div>
                     <button class="hamburger hamburger--squeeze" type="button">
@@ -91,9 +88,8 @@
                     </button>
                 </div>
             </nav>
-
             <div class="welcome wrapper">
-                <div data-aos="fade-down">
+                <div data-aos="fade-down" data-aos-offset="0">
                     <h2 class="welcome-subheading">
                         Kancelaria Radcy Prawnego
                     </h2>
@@ -452,17 +448,17 @@
                     </div>
                     <div class="footer__container">
                         <p>Nawigacja</p>
-                        <a href="#"
+                        <a href="#" class="home-nav"
                             ><i class="fas fa-chevron-right"></i>Strona
                             Główna</a
                         >
-                        <a href="#"
+                        <a href="#" class="about-nav"
                             ><i class="fas fa-chevron-right"></i>O firmie</a
                         >
-                        <a href="#"
+                        <a href="#" class="specializations-nav"
                             ><i class="fas fa-chevron-right"></i>Usługi</a
                         >
-                        <a href="#"
+                        <a href="#" class="contact-nav"
                             ><i class="fas fa-chevron-right"></i>Kontakt</a
                         >
                     </div>
@@ -494,15 +490,13 @@
                         href="https://www.facebook.com/profile.php?id=100010595116449&sk=about_overview"
                         ><i class="fab fa-facebook-f"></i
                     ></a>
-                    <a href="https://twitter.com/jkarolak92"
-                        ><i class="fab fa-twitter"></i
-                    ></a>
                 </div>
                 <a href="#"><i class="fas fa-arrow-up"></i></a>
             </div>
         </footer>
-        <script src="js/index.js"></script>
         <script src="js/email.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/index.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script></script>
     </body>

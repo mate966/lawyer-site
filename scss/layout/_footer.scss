@@ -1,5 +1,5 @@
 footer {
-    background-color: $dark-bgc;
+    background-color: $darkBgc-c;
     font-size: 15px;
     line-height: 24px;
     color: #b1bec0;
@@ -22,7 +22,7 @@ footer {
 
     & i {
         margin-right: 10px;
-        color: $accent;
+        color: $accent-c;
     }
 
     @include breakpoint("sm") {
@@ -60,7 +60,7 @@ footer {
 
     & i:hover {
         cursor: pointer;
-        color: $accent;
+        color: $accent-c;
     }
 
     @include breakpoint("md") {
