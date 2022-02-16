@@ -4,13 +4,13 @@ header {
     justify-content: flex-start;
     height: 100vh;
     max-height: 850px;
-    background-image: url("./../../img/desktop/header.jpg");
+    background-image: url("../img/desktop/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
 
     @include breakpoint("lg") {
-        background-image: url("./../../img/mobile/header-m.jpg");
+        background-image: url("../img/mobile/header-m.jpg");
     }
 
     @include breakpointLandscape("md") {
