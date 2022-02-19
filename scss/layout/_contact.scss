@@ -2,6 +2,20 @@
     margin-bottom: 100px;
 }
 
+.contact__container {
+    display: flex;
+}
+
+.contact__about-me {
+    flex-basis: 50%;
+    margin: 20px 0;
+    padding: 10px;
+
+    & p {
+        line-height: 2rem;
+    }
+}
+
 .form__container {
     display: flex;
     justify-content: space-between;

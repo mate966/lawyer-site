@@ -1,5 +1,6 @@
 #about {
     margin-bottom: 100px;
+    overflow: hidden;
 
     & img {
         box-shadow: -10px -10px 0px 0px #ffffff, -10px -10px 0px 1px $accent-c;
@@ -19,6 +20,10 @@
     margin-top: 80px;
     display: flex;
     justify-content: center;
+
+    .aos-init {
+        text-align: center;
+    }
 
     @include breakpoint("sm") {
         flex-direction: column;

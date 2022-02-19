@@ -4,7 +4,6 @@
     transform: translateY(-50%);
 
     @include breakpointLandscape("md") {
-        margin-bottom: 70px;
         padding: 0;
         transform: translateY(0);
     }
@@ -15,7 +14,6 @@
 
     @include breakpoint("sm") {
         flex-direction: column;
-        margin-bottom: 70px;
         padding: 0;
         transform: translateY(0);
     }
@@ -41,14 +39,5 @@
 
     @include breakpoint("lg") {
         padding: 25px 10px;
-    }
-}
-
-.info-heading {
-    font-size: 22px;
-    margin: 25px 0 15px 0;
-
-    @include breakpoint("md") {
-        font-size: 1.3rem;
     }
 }

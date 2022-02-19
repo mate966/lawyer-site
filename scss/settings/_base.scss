@@ -17,14 +17,11 @@ body {
 a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 
     &:hover {
-        color: #c19865;
+        color: $accent-c;
     }
-}
-
-ul {
-    list-style-type: none;
 }
 
 li {
