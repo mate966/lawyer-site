@@ -3,14 +3,14 @@ footer {
     color: $font-light-c;
 }
 
-.top-footer {
+.footer__top {
     display: flex;
     align-items: center;
     min-height: 400px;
     border-bottom: 1px solid #4e4e4e;
 }
 
-.footer-contact {
+.footer__contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

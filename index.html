@@ -43,20 +43,20 @@
             <nav>
                 <div class="contact-nav">
                     <div class="contact-nav__container wrapper">
-                        <div class="container__left">
-                            <div class="left__contact">
+                        <div class="contact-details">
+                            <div class="details">
                                 <i class="fas fa-phone-alt"></i>
                                 <p>
                                     <a href="tel:123456789">+48 123 456 789</a>
                                 </p>
                             </div>
-                            <div class="left__contact">
+                            <div class="details">
                                 <i class="far fa-envelope"></i>
                                 <a href="mailto:biuro@krpjk.pl"
                                     >biuro@krpjk.pl</a
                                 >
                             </div>
-                            <div class="left__contact">
+                            <div class="details">
                                 <i class="far fa-clock"></i>
                                 <p>Pon-Pt 9:00-17:00</p>
                             </div>
@@ -124,11 +124,16 @@
             <h2 class="section-heading about-heading">O firmie<span></span></h2>
             <div class="about-container">
                 <div data-aos="fade-right">
-                    <img src="./img/desktop/prawnik.jpg" alt="" />
+                    <img
+                        src="./img/desktop/prawnik.jpg"
+                        alt="Zdjęcie Jan Karolak"
+                    />
                 </div>
                 <div data-aos="fade-left">
                     <div class="about__info">
-                        <h1>Kancelaria Radcy Prawnego Jan Karolak</h1>
+                        <h1 class="big-heading">
+                            Kancelaria Radcy Prawnego Jan Karolak
+                        </h1>
                         <p>
                             Od 2018 r. prowadzę pomoc prawną dla osób fizycznych
                             i przedsiębiorców na terenie Tczewa oraz trójmiasta
@@ -369,9 +374,25 @@
         </section>
         <section id="contact" class="wrapper">
             <h2 class="section-heading">Kontakt<span></span></h2>
+            <div class="contact__info contact-details">
+                <div class="details details--big">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>
+                        <a href="tel:123456789">+48 123 456 789</a>
+                    </p>
+                </div>
+                <div class="details details--big">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:biuro@krpjk.pl">biuro@krpjk.pl</a>
+                </div>
+                <div class="details details--big">
+                    <i class="far fa-clock"></i>
+                    <p>Pon-Pt 9:00-17:00</p>
+                </div>
+            </div>
             <div class="contact__container">
                 <div class="contact__about-me">
-                    <h1>Radca Prawny Jan Karolak</h1>
+                    <h1 class="big-heading">Radca Prawny Jan Karolak</h1>
                     <p>
                         Ukończyłem prawo oraz międzynarodowe stosunki polityczne
                         na Uniwersytecie Gdańskim. Następnie obyłem aplikację
@@ -384,11 +405,6 @@
                         prowadzoną przez Okręgową Izbę Radców Prawnych w Gdańsku
                         – numer wpisu GD/GD/3542.
                     </p>
-                    <img
-                        src="img/desktop/kirp.png"
-                        alt="Logo Krajowej Izby Radców Prawnych"
-                        width="110px"
-                    />
                 </div>
                 <form id="contact__form">
                     <div class="form__container">
@@ -436,12 +452,12 @@
             </div>
         </section>
         <footer>
-            <div class="top-footer">
-                <div class="footer-contact wrapper">
+            <div class="footer__top">
+                <div class="footer__contact wrapper">
                     <div class="footer__container">
                         <img src="img/desktop/logo.png" alt="Logo firmy" />
                         <p class="paragraph">
-                            Zajmuje się ogólną praktyką i służę osobom fizycznym
+                            Zajmuję się ogólną praktyką i służę osobom fizycznym
                             oraz przedsiębiorstwom. Jestem oddanym radcą
                             prawnym, który pracuje ciężko i wydajnie, aby
                             zapewnić Państwu najlepszą obsługę prawną.
@@ -465,15 +481,15 @@
                     </div>
                     <div class="footer__container">
                         <p class="small-heading">Kontakt</p>
-                        <div class="contact__container">
+                        <div class="details">
                             <i class="fas fa-phone-alt"></i>
                             <a href="tel:123456789">+48 123 456 789</a>
                         </div>
-                        <div class="contact__container">
+                        <div class="details">
                             <i class="far fa-envelope"></i>
                             <a href="mailto:biuro@krpjk.pl">biuro@krpjk.pl</a>
                         </div>
-                        <div class="contact__container">
+                        <div class="details">
                             <i class="far fa-clock"></i>
                             <p>Pon-Pt 9:00-17:00</p>
                         </div>
