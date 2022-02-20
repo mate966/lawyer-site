@@ -1,61 +1,65 @@
 #why-us {
     display: flex;
-    min-height: 600px;
 
-    @include breakpoint("md") {
-        display: flex;
+    @include breakpoint("xl") {
         flex-direction: column;
     }
 }
 
 .why-us__left {
-    flex-basis: 50%;
-    padding: 5% 1% 5% 25%;
-    background-image: url("../img/desktop/chess.jpg");
+    flex-basis: 60%;
+    padding: 2% 2% 2% 29%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../img/desktop/chess.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
 
-    & p {
-        margin: 1rem 0;
+    .left__container {
+        margin-bottom: 25px;
     }
 
-    @include breakpoint("md") {
-        padding: 5% 5% 5% 50%;
+    @include breakpoint("xl") {
+        background-attachment: fixed;
+        padding: 2% 2% 2% 49%;
     }
-
-    @include breakpoint("xs") {
-        background-position: right;
-        padding: 5% 5%;
-        // padding: 5% 5% 5% 20%;
+    @include breakpoint("sm") {
+        padding: 20px;
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ),
+            url("../img/mobile/chess-m.jpg");
         text-align: center;
     }
 }
+
 .why-us__right {
-    padding: 5% 15% 5% 1%;
-    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    flex-basis: 40%;
     background-color: #fbf9f5;
+}
 
-    @include breakpoint("md") {
-        padding: 20px;
-        text-align: center;
-    }
-
-    @include breakpoint("sm") {
-        padding: 20px;
-    }
+.why-us__advantages {
+    display: flex;
+    flex-direction: column;
 }
 
 .advantages {
     display: flex;
-    margin: 2rem 0;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    flex-basis: 25%;
 
     & i {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1rem;
+        margin-right: 15px;
         min-width: 70px;
         min-height: 70px;
         width: 70px;
@@ -64,16 +68,5 @@
         border-radius: 50%;
         font-size: 3rem;
         color: $accent-c;
-    }
-
-    @include breakpoint("sm") {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.advantages__container {
-    & h4 {
-        margin-bottom: 10px;
     }
 }
