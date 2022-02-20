@@ -5,7 +5,7 @@
     line-height: 21px;
     letter-spacing: 4px;
     font-family: "Playfair Display";
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -46,6 +46,10 @@
     margin-bottom: 20px;
     font-size: 1.8rem;
     letter-spacing: 1px;
+
+    &--smaller {
+        font-size: 1.4rem;
+    }
 }
 
 .paragraph {

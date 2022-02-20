@@ -1,11 +1,12 @@
 #specializations {
+    margin-bottom: 80px;
 }
 
 .specializations__container {
     display: flex;
     flex-wrap: wrap;
 
-    @include breakpoint("md") {
+    @include breakpoint("sm") {
         flex-direction: column;
     }
 }
@@ -13,35 +14,40 @@
 .specialization__container {
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
-    margin: 10px auto;
+    width: 28%;
+    margin: 20px auto;
 
-    @include breakpoint("md") {
-        flex-direction: column;
+    @include breakpoint("lg") {
+        width: 45%;
+    }
 
-        align-items: center;
-        justify-content: center;
+    @include breakpoint("sm") {
+        width: 100%;
+        text-align: center;
     }
 }
 
 .container__heading {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 
     & i {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1rem;
-        min-width: 50px;
-        min-height: 50px;
-        width: 50px;
-        height: 50px;
+        margin: 0 15px;
         font-size: 3rem;
         color: $accent-c;
     }
 
-    & h4 {
-        width: 100%;
+    & p {
+        @include breakpoint("xs") {
+            max-width: 210px;
+        }
+    }
+
+    @include breakpoint("sm") {
+        margin: 10px auto;
     }
 }
