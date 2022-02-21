@@ -4,6 +4,11 @@ nav {
 
 .contact-nav {
     background-color: rgba(14, 17, 17, 0.5);
+    transition: 0.3s;
+
+    &.is-active {
+        background-color: $accent-c;
+    }
 }
 
 .contact-nav__container {
@@ -49,10 +54,11 @@ nav {
 }
 
 .navigation {
-    & ul {
-        display: flex;
+    display: flex;
+    transition: 0.3s;
 
-        & li a {
+    & li {
+        a {
             margin-left: 50px;
             text-transform: uppercase;
             text-decoration: none;
@@ -64,11 +70,34 @@ nav {
                 color: $accent-c;
                 cursor: pointer;
             }
+
+            @include breakpoint("sm") {
+                margin: 0;
+            }
+        }
+        @include breakpoint("sm") {
+            margin: 20px auto;
+            font-size: 2rem;
         }
     }
 
     @include breakpoint("sm") {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $darkBgc-c;
+    }
+
+    &.is-active {
+        opacity: 1;
+        touch-action: none;
     }
 }
 

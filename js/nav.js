@@ -9,16 +9,27 @@ const requestButton = document.querySelector(".request-button"),
 
 homeButton.addEventListener("click", () => {
     window.scrollTo(0, 0);
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("is-active");
 });
+
 requestButton.addEventListener("click", () => {
     contactSection.scrollIntoView({ behavior: "smooth" });
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("is-active");
 });
 aboutButton.addEventListener("click", () => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("is-active");
 });
 specializationsButton.addEventListener("click", () => {
     specializationsSection.scrollIntoView({ behavior: "smooth" });
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("is-active");
 });
 contactButton.addEventListener("click", () => {
     contactSection.scrollIntoView({ behavior: "smooth" });
+    hamburger.classList.remove("is-active");
+    menu.classList.remove("is-active");
 });
