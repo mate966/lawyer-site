@@ -13,6 +13,10 @@
 
     &.about-heading {
         padding: 0;
+
+        @include breakpoint("md") {
+            padding-top: 100px;
+        }
     }
 
     & span {
@@ -30,10 +34,6 @@
             width: 100px;
             background-color: #c19865;
         }
-    }
-
-    @include breakpoint("md") {
-        padding-top: 70px;
     }
 }
 
@@ -61,6 +61,10 @@
 .why-us__heading {
     margin-bottom: 20px;
     font-family: $secondary-font, serif;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: $accent-c;
+
+    @include breakpoint("xl") {
+        text-align: center;
+    }
 }

@@ -49,6 +49,12 @@ li {
   padding: 0;
 }
 
+@media (max-width: 992px) {
+  .section-heading.about-heading {
+    padding-top: 100px;
+  }
+}
+
 .section-heading span {
   display: block;
   margin: 36px auto;
@@ -64,12 +70,6 @@ li {
   height: 1px;
   width: 100px;
   background-color: #c19865;
-}
-
-@media (max-width: 992px) {
-  .section-heading {
-    padding-top: 70px;
-  }
 }
 
 .small-heading {
@@ -96,8 +96,14 @@ li {
 .why-us__heading {
   margin-bottom: 20px;
   font-family: "Playfair Display", serif, serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: #bf9f5e;
+}
+
+@media (max-width: 1440px) {
+  .why-us__heading {
+    text-align: center;
+  }
 }
 
 .hamburger {
@@ -629,7 +635,7 @@ header {
 .why-us__left {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  padding: 2% 2% 2% 29%;
+  padding: 20px 20px 20px 29%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/desktop/chess.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/desktop/chess.jpg");
   background-repeat: no-repeat;
@@ -666,7 +672,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2%;
+  padding: 20px;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   background-color: #fbf9f5;
@@ -682,6 +688,27 @@ header {
           flex-direction: column;
 }
 
+@media (max-width: 1440px) {
+  .why-us__advantages {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 992px) {
+  .why-us__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .advantages {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,11 +716,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 25px 0;
 }
 
 .advantages i {
@@ -706,15 +731,52 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 15px;
+  margin-right: 20px;
   min-width: 70px;
   min-height: 70px;
-  width: 70px;
-  height: 70px;
   border: 2px solid #bf9f5e;
   border-radius: 50%;
   font-size: 3rem;
   color: #bf9f5e;
+}
+
+@media (max-width: 1440px) {
+  .advantages i {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.advantages-heading {
+  margin-bottom: 20px;
 }
 
 #specializations {
