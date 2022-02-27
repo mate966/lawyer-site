@@ -64,6 +64,7 @@ const formValidation = () => {
                 errorText = `Maksymalna ilość znaków: ${max}.`;
                 break;
         }
+
         createElement(input, errorText);
         input.classList.add("input-error");
     };
@@ -72,7 +73,6 @@ const formValidation = () => {
     checkTextInput(lastName, 3, 35);
     checkTextInput(email, 3, 35);
     checkTextInput(message, 3, 35);
-    console.log(errorsList.length);
 
     return errorsList.length === 0 ? true : false;
 };
@@ -89,7 +89,7 @@ const sendEmail = (e) => {
 
     if (formValidation()) {
         emailjs
-            .send("service_9weunb3", "template_pvjnc6q", templateParams)
+            .send("service_ae53m8u", "template_8lq97w8", templateParams)
             .then(
                 function (response) {
                     emailResponse.textContent = "Wiadomość wysłana";

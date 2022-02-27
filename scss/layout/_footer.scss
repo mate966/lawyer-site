@@ -10,7 +10,7 @@ footer {
     border-bottom: 1px solid #4e4e4e;
 }
 
-.footer__contact {
+.top__contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,36 +20,45 @@ footer {
     }
 }
 
-.footer__container {
+.top__container {
     display: flex;
     flex-direction: column;
     min-width: 200px;
 
-    & * {
+    * {
         margin: 5px 0;
     }
 
     &:first-child {
         max-width: 550px;
+        justify-content: center;
     }
 
-    & img {
-        width: 210px;
+    img {
+        align-self: center;
+        height: 100px;
+
+        @include breakpoint("sm") {
+            height: 70px;
+        }
     }
 
-    & i {
+    i {
         display: inline-flex;
         align-items: center;
         margin-right: 10px;
         color: $accent-c;
     }
 
-    & a {
+    a {
         color: $font-light-c;
 
         &:hover {
             color: $accent-c;
         }
+    }
+    span {
+        display: block;
     }
 
     @include breakpoint("md") {
@@ -59,25 +68,8 @@ footer {
             min-width: 85%;
         }
 
-        img {
-            width: 40%;
-            margin: 10px auto;
-        }
-
         .paragraph {
             text-align: center;
-        }
-    }
-
-    @include breakpoint("sm") {
-        & img {
-            width: 50%;
-        }
-    }
-
-    @include breakpoint("xs") {
-        & img {
-            width: 85%;
         }
     }
 }
@@ -92,7 +84,7 @@ footer {
     @include breakpoint("md") {
         padding: 20px;
 
-        & * {
+        * {
             margin: 5px 10px;
         }
     }

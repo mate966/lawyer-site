@@ -28,6 +28,8 @@
     }
 
     &.is-active {
+        touch-action: none;
+
         &:hover {
             @if $hamburger-hover-use-filter == true {
                 filter: $hamburger-active-hover-filter;
@@ -43,7 +45,7 @@
         }
     }
 
-    @include breakpoint("sm") {
+    @include breakpoint("md") {
         display: inline-block;
     }
 }

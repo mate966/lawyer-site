@@ -1,9 +1,7 @@
 header {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     height: 100vh;
-    max-height: 850px;
     background-image: url("../img/desktop/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,40 +29,8 @@ header {
     }
 }
 
-.welcome-subheading {
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: $secondary-font;
-
-    @include breakpoint("xs") {
-        font-size: 1.5rem;
-    }
-}
-
-.welcome-heading {
-    font-size: 5rem;
-    letter-spacing: 4px;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    @include breakpoint("md") {
-        letter-spacing: 2px;
-        font-size: 4rem;
-    }
-
-    @include breakpoint("sm") {
-        font-size: 3rem;
-    }
-}
-
 .request-button {
     @include button;
     margin-top: 30px;
     padding: 15px 20px;
-
-    @include breakpoint("xs") {
-        padding: 15px;
-    }
 }

@@ -1,5 +1,6 @@
 #contact {
     margin-bottom: 100px;
+    text-align: justify;
 }
 
 .contact__info {
@@ -11,7 +12,7 @@
     }
 }
 
-.details--big {
+.contact-details--big {
     font-size: 1.9rem;
 
     & a {
@@ -37,7 +38,7 @@
     }
 }
 
-.contact__about-me {
+.clause {
     flex-basis: 45%;
 
     & p {
@@ -60,7 +61,7 @@
     }
 }
 
-.input-container {
+.input {
     flex-basis: 32%;
 }
 
@@ -85,10 +86,7 @@
 
 .text-message {
     min-height: 200px;
-    vertical-align: bottom;
-}
 
-.form__textarea {
     @include breakpoint("sm") {
         text-align: center;
     }
@@ -108,6 +106,7 @@
 .form__response {
     display: none;
     text-align: center;
+    margin: 20px;
 }
 
 .error-active,

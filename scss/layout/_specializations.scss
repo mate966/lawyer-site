@@ -1,53 +1,66 @@
-#specializations {
-    margin-bottom: 80px;
-}
-
 .specializations__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
 
     @include breakpoint("sm") {
         flex-direction: column;
     }
 }
 
-.specialization__container {
+.specialization {
     display: flex;
     flex-direction: column;
-    width: 28%;
-    margin: 20px auto;
+    flex-basis: 31%;
+    margin-bottom: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    cursor: pointer;
 
-    @include breakpoint("lg") {
-        width: 45%;
+    li {
+        text-indent: -10px;
+    }
+
+    &:hover {
+        background-color: $accent-c;
+        color: white;
+
+        i {
+            transition: 0.5s;
+            color: white;
+        }
+    }
+
+    @include breakpoint("md") {
+        flex-basis: 50%;
     }
 
     @include breakpoint("sm") {
-        width: 100%;
+        flex-basis: 100%;
         text-align: center;
     }
 }
 
-.container__heading {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+.specialization__heading {
+    text-align: center;
 
-    & i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 15px;
-        font-size: 3rem;
-        color: $accent-c;
-    }
+    i {
+        @include big-icon;
+        margin: 0;
+        border: none;
 
-    & p {
-        @include breakpoint("xs") {
-            max-width: 210px;
+        @include breakpoint("xl") {
+            margin: 0;
         }
     }
 
-    @include breakpoint("sm") {
-        margin: 10px auto;
+    .small-heading {
+        margin-bottom: 10px;
+        min-height: 60px;
+
+        @include breakpoint("sm") {
+            min-height: 0;
+        }
     }
 }

@@ -1,3 +1,35 @@
+.welcome-subheading {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+
+    &:first-child {
+        font-size: 1.2rem;
+    }
+
+    @include breakpoint("xs") {
+        font-size: 1.5rem;
+    }
+}
+
+.welcome-heading {
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include breakpoint("md") {
+        letter-spacing: 2px;
+        font-size: 4rem;
+    }
+
+    @include breakpoint("sm") {
+        font-size: 3rem;
+    }
+}
+
 .section-heading {
     margin: 0 auto;
     padding-top: 100px;
@@ -11,18 +43,9 @@
     text-transform: uppercase;
     color: #202628;
 
-    &.about-heading {
-        padding: 0;
-
-        @include breakpoint("md") {
-            padding-top: 100px;
-        }
-    }
-
     & span {
         display: block;
-        margin: 36px auto;
-        max-width: 500px;
+        margin-top: 36px;
         height: 1px;
         background-color: #d5d5d5;
 
@@ -38,8 +61,12 @@
 }
 
 .small-heading {
-    margin: 25px 0 15px 0;
+    margin-bottom: 20px;
     font-size: 1.5rem;
+
+    @include breakpoint("xl") {
+        text-align: center;
+    }
 }
 
 .big-heading {
@@ -47,8 +74,8 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
 
-    &--smaller {
-        font-size: 1.4rem;
+    @include breakpoint("md") {
+        text-align: center;
     }
 }
 
@@ -56,12 +83,21 @@
     font-size: 1rem;
     line-height: 1.6rem;
     letter-spacing: 1px;
+
+    &--source {
+        font-size: 0.8rem;
+    }
+
+    @include breakpoint("sm") {
+        text-align: center;
+    }
 }
 
-.why-us__heading {
+.why-us-heading {
     margin-bottom: 20px;
     font-family: $secondary-font, serif;
     font-size: 2rem;
+    text-align: left;
     color: $accent-c;
 
     @include breakpoint("xl") {

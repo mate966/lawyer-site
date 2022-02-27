@@ -1,35 +1,19 @@
-const requestButton = document.querySelector(".request-button"),
-    aboutSection = document.querySelector("#about"),
-    specializationsSection = document.querySelector("#specializations"),
-    contactSection = document.querySelector("#contact"),
-    homeButton = document.querySelector(".home-nav"),
-    aboutButton = document.querySelector(".about-nav"),
-    specializationsButton = document.querySelector(".specializations-nav"),
-    contactButton = document.querySelector(".contact-navi");
+const navigateElements = document.querySelectorAll(".menu-element__navigate");
+const requestButton = document.querySelector(".request-button");
+const sections = document.querySelectorAll(".section");
+const arrayOfNavigateElements = [...navigateElements];
+const arrayOfSections = [...sections];
 
-homeButton.addEventListener("click", () => {
-    window.scrollTo(0, 0);
-    hamburger.classList.remove("is-active");
-    menu.classList.remove("is-active");
-});
+arrayOfNavigateElements.map((navigateElement) =>
+    navigateElement.addEventListener("click", (e) => {
+        const value = e.target.getAttribute("value");
 
-requestButton.addEventListener("click", () => {
-    contactSection.scrollIntoView({ behavior: "smooth" });
-    hamburger.classList.remove("is-active");
-    menu.classList.remove("is-active");
-});
-aboutButton.addEventListener("click", () => {
-    aboutSection.scrollIntoView({ behavior: "smooth" });
-    hamburger.classList.remove("is-active");
-    menu.classList.remove("is-active");
-});
-specializationsButton.addEventListener("click", () => {
-    specializationsSection.scrollIntoView({ behavior: "smooth" });
-    hamburger.classList.remove("is-active");
-    menu.classList.remove("is-active");
-});
-contactButton.addEventListener("click", () => {
-    contactSection.scrollIntoView({ behavior: "smooth" });
-    hamburger.classList.remove("is-active");
-    menu.classList.remove("is-active");
-});
+        arrayOfSections.map((section) => {
+            if (value === section.id) {
+                section.scrollIntoView({ behavior: "smooth" });
+                hamburger.classList.remove("is-active");
+                menu.classList.remove("is-active");
+            }
+        });
+    })
+);

@@ -1,5 +1,6 @@
 #why-us {
     display: flex;
+    text-align: justify;
 
     @include breakpoint("xl") {
         flex-direction: column;
@@ -24,13 +25,10 @@
         background-attachment: fixed;
         padding: 2% 2% 2% 49%;
     }
+
     @include breakpoint("sm") {
         padding: 20px;
-        background-image: linear-gradient(
-                rgba(0, 0, 0, 0.3),
-                rgba(0, 0, 0, 0.3)
-            ),
-            url("../img/mobile/chess-m.jpg");
+        background-position: right;
         text-align: center;
     }
 }
@@ -40,62 +38,51 @@
     flex-direction: column;
     padding: 20px;
     flex-basis: 40%;
-    background-color: #fbf9f5;
+    background-color: #fff8e7;
+
+    @include breakpoint("xl") {
+        padding-bottom: 0;
+    }
 }
 
-.why-us__advantages {
+.advantages__container {
     display: flex;
     flex-direction: column;
 
     @include breakpoint("xl") {
         justify-content: space-between;
-        flex-basis: 33.33%;
         flex-direction: row;
     }
+
     @include breakpoint("md") {
         flex-wrap: wrap;
     }
 }
 
-.advantages {
+.advantage {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    margin: 25px 0;
+    margin-bottom: 50px;
 
-    & i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-        min-width: 70px;
-        min-height: 70px;
-        border: 2px solid $accent-c;
-        border-radius: 50%;
-        font-size: 3rem;
-        color: $accent-c;
-
-        @include breakpoint("xl") {
-            margin: 20px;
-        }
+    i {
+        @include big-icon;
     }
 
     @include breakpoint("xl") {
         flex-direction: column;
-        flex-basis: 30%;
+        flex-basis: 31%;
+        margin-bottom: 20px;
     }
 
     @include breakpoint("md") {
         flex-basis: 45%;
-        flex-wrap: wrap;
-        margin: 25px auto;
-        text-align: center;
+
+        &:last-child {
+            margin: auto;
+        }
     }
+
     @include breakpoint("sm") {
         flex-basis: 100%;
     }
-}
-
-.advantages-heading {
-    margin-bottom: 20px;
 }
